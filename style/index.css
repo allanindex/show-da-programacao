@@ -1,0 +1,158 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000;
+    color: white;
+}
+.container-main{
+    width: 90vw;
+    height: 600px;
+    background-color: #131313;
+    border: 5px solid greenyellow;
+    display: flex;
+}
+#img-code{
+    height: 590px;
+    width: 35vw;
+}
+.text-intro{
+    width: 55vw;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+.text-intro h1{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.main-buttons button{
+    height: 40px;
+    width: 120px;
+    border-radius: 10px;
+}
+
+.container-perguntas{
+    width: 90vw;
+    height: 600px;
+    background-color: #131313;
+    border: 5px solid greenyellow;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container-perguntas .title{
+    font-size: 2rem;
+
+    text-align: center;
+    margin-top: 50px;
+}
+
+.alternativas{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 30px;
+    position: relative;
+    left: -200px;
+}
+.alternativa{
+    width: 600px;
+    height: 90px;
+    background-color: white;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 10px;
+}
+.alternativa:hover{
+    border: 2px solid greenyellow;
+    background-color: #787878;
+    transform: scale(1.05);
+    transition: 1s;
+    cursor: pointer;
+    
+}
+.actions{
+    display: flex;
+    gap: 15px;
+    position: fixed;
+    bottom: 30px;
+}
+.actions button{
+    margin-top: 50px;
+    height: 40px;
+    width: 120px;
+    border-radius: 10px;
+    background-color: yellowgreen;
+    border: none;
+}
+
+.bitcoin{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-image: url('../img/bitcoin.png');
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    font-size: 2rem;
+    font-weight: bold;
+
+}
+.head{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 950px;
+}
+.points{
+    position: fixed;
+    display: flex;
+    align-items: center;
+    left: 70px;
+}
+
+.fimDoJogo{
+    position: absolute;
+    top: 100px;
+    z-index: 9;
+    text-align: center;
+    padding: 20px;
+    display: none;
+    background-color: #101010;
+}
+
+#bitcoin-fim{
+    height: 300px;
+    width: 300px;
+}
+
+.fim-buttons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+.fim-buttons button{
+    width: 50%;
+    height: 40px;
+    border-radius: 10px;
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/index.css">
+    <title>Game show</title>
+</head>
+<body>
+    <main class="container-main">
+        <div class="text-intro">
+            <h1>Game show da programação</h1>
+            <div class="main-buttons">
+                <button id="iniciar">Iniciar</button>
+                <button>Histórico</button>
+            </div>
+        </div>
+        <img src="img/background-code.jpg"  id='img-code' alt="">
+    </main>
+    <main class="container-perguntas">
+        <div class="head">
+            <div class="points">
+                <h3>score:</h3>
+                <div class="bitcoin">
+                
+                </div>
+            </div>
+            <div class="title"></div>
+        </div>
+        <div class="alternativas">
+         <div  class="alternativa" id="alternativa1" value="a"></div>
+         <div  class="alternativa" id="alternativa2" value="b"></div>
+         <div  class="alternativa" id="alternativa3" value="c"></div>
+         <div  class="alternativa" id="alternativa4" value="d"></div>
+        </div>
+        <div class="actions">
+            <button id="proximaPergunta" onclick="proximaPergunta()">Proxima pergunta</button>
+            <button onclick="home()">Home</button>
+        </div>
+     </main>
+     <div class="fimDoJogo">
+        <img src="img/bitcoin-fim.png" alt="" id="bitcoin-fim">
+        <h2 id="winnig-message">Fim de jogo!<br> Você ganhou </h2>
+        <div class="fim-buttons">
+            <button onclick="home()">Home</button>
+            <button>Ranking</button>
+        </div>
+     </div>
+    <script src="./modulos/index.js"></script>
+</body>
+</html>
